@@ -1,0 +1,29 @@
+#container {
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+#cabecalho{
+	margin-bottom: 5px;
+}
+#menu{
+	background-color: green;
+	height: 40px;
+	padding-left: 20px;
+}
+
+#menu a{
+	color: white;
+	margin-right: 20px;
+	line-height: 40px;
+}
+
+#corpo{
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+
+#rodape{
+	margin: solid 1px green;
+	text-align: center;
+}

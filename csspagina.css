@@ -1,0 +1,12 @@
+#corpo a{
+	background-color: silver;
+	color: black;
+	min-width: 90px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 0 5px;
+}
