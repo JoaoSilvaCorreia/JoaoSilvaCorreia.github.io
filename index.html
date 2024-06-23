@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
+     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -21,11 +21,11 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            position: relative; /* Para posicionamento absoluto da foto */
         }
         header {
             text-align: center;
             margin-bottom: 20px;
+            position: relative;
         }
         header h1 {
             font-size: 32px;
@@ -36,6 +36,17 @@
             font-size: 18px;
             color: #666;
             margin-bottom: 20px;
+        }
+        .profile-pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 130px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-top: 10px;
+            margin-left: 10px;
         }
         section {
             margin-bottom: 30px;
@@ -81,18 +92,17 @@
             margin-right: 10px;
         }
         .social-icons a:hover {
-            color: #00050a;
+            color: #007bff;
         }
-        /* Estilo para a foto */
-        .profile-pic {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 100px; /* tamanho */
-            height: 120px; /* tamanho */
-            border-radius: 4px;
-            border: 2px solid #ccc;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        @media (max-width: 600px) {
+            .profile-pic {
+                position: static;
+                display: block;
+                margin: 0 auto 20px auto;
+            }
+            header {
+                text-align: center;
+            }
         }
     </style>
 </head>
