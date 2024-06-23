@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -23,30 +23,29 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
-            position: relative;
+            flex-wrap: wrap;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 130px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 20px;
         }
         header h1 {
             font-size: 32px;
             color: #333;
             margin-bottom: 5px;
+            margin-top: 0;
         }
         header p {
             font-size: 18px;
             color: #666;
             margin-bottom: 20px;
-        }
-        .profile-pic {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100px;
-            height: 130px;
-            border-radius: 8px;
-            object-fit: cover;
-            margin-top: 10px;
-            margin-left: 10px;
+            margin-top: 0;
         }
         section {
             margin-bottom: 30px;
@@ -95,13 +94,14 @@
             color: #007bff;
         }
         @media (max-width: 600px) {
-            .profile-pic {
-                position: static;
-                display: block;
-                margin: 0 auto 20px auto;
-            }
             header {
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
+            }
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -109,9 +109,11 @@
 <body>
     <div class="container">
         <header>
-            <img src="../images/image.jpeg" class="profile-pic">
-            <h1>João Correia</h1>
-            <p>Economista e técnico em informática.</p>
+            <img src="../images/image.jpeg" class="profile-pic" alt="Foto de Perfil">
+            <div>
+                <h1>João Correia</h1>
+                <p>Economista e técnico em informática.</p>
+            </div>
         </header>
 
         <section>
@@ -119,14 +121,8 @@
             <div class="section-content">
                 <div class="contact-info">
                     <p><i class="fas fa-envelope"></i> joao.silva.correia@uel.br</p>
-                    <p> </p>
-                    <p> </p>
                     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joaoao" target="_blank">linkedin.com/in/joaoao</a></p>
-                    <p> </p>
-                    <p> </p>
                     <p><i class="fab fa-github"></i> <a href="https://github.com/JoaoSilvaCorreia" target="_blank">github.com/JoaoSilvaCorreia</a></p>
-                    <p> </p>
-                    <p> </p>
                     <p><i class="fas fa-lattes"></i> <a href="http://lattes.cnpq.br/6214171233053965" target="_blank">Lattes</a></p>
                 </div>
             </div>
@@ -135,12 +131,10 @@
         <section>
             <div class="section-title">Formação Acadêmica</div>
             <div class="section-content">
-                
                 <p><strong>Mestrado:</strong> Economia Regional, UEL, 2024 - atual. </p>
                 <p><strong>Graduação:</strong> Ciências Econômicas, UEL, 2018 - 2022.</p>
                 <p><strong>Técnico:</strong> Técnico em informática, IFPR, 2016 - 2018.</p>
             </div>
-           
         </section>
 
         <section>
@@ -153,22 +147,18 @@
                     <ul>
                         <li>Análises de crédito estruturado (modelagem financeira, análise de mercado, due diligence e participação em comitês de crédito); rotinas de acompanhamento de portfólio (juros, amortizações, garantias)e revisões de crédito de ativos em portfólio; auxílio no desenvolvimento de rating proprietário. </li>
                     </ul>
-                    
                 </div>
             </div>
             <div class="section-content">
                 <div>
                     <p><strong>Empresa:</strong> AINTEC - Technological Innovation Agency of Londrina State University</p>
                     <p><strong>Cargo:</strong> Estagiário de Economia</p>
-                   
                     <p><strong>Período:</strong> 06/2022 - 02/2024</p>
                     <ul>
                         <li>Integrante da equipe de gestão da Incubadora Internacional de Empresas de Base Tecnológica da UEL (INTUEL). Auxílio na implantação dos processos-chave do modelo CERNE na INTUEL; apoio na assessoria e acompanhamento das empresas incubadas; atualização das informações das empresas no banco de dados da incubadora.</li>
                     </ul>
-                    
                 </div>
             </div>
-
         </section>
 
         <section>
@@ -188,15 +178,7 @@
                 <p><strong>Espanhol:</strong> Básico</p>
             </div>
         </section>
-<!--
 
-        <section>
-            <div class="section-title">Referências</div>
-            <div class="section-content">
-                <p>Disponíveis mediante solicitação.</p>
-            </div>
-        </section>
--->
         <footer>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/joaoao" target="_blank"><i class="fab fa-linkedin"></i></a>
