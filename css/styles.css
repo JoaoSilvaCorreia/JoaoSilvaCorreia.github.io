@@ -83,6 +83,19 @@
             font-size: 24px;
             margin-right: 1px;
         }
+
+
+
+        .badge-container {
+        display: inline-block; /* Permite que as containers de distintivos fiquem uma ao lado da outra */
+        margin-right: 10px; /* Espaço entre cada container de distintivo */
+        vertical-align: top; /* Alinha os containers pela parte superior */
+        }
+
+        .badge-item {
+            margin-bottom: 10px; /* Espaço entre distintivos */
+        }
+
         .social-icons a:hover {
             color: #007bff;
         }
