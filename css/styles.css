@@ -91,9 +91,9 @@
      
         .badge-container {
             float: left; /* Faz com que os containers de distintivos flutuem lado a lado */
-            width: calc(33.33% - 20px); /* Define a largura de cada container, subtraindo o espaço entre eles */
-            margin-right: 20px; /* Espaço entre cada container de distintivo */
-            margin-bottom: 20px; /* Espaço abaixo de cada container de distintivo */
+            width: calc(33.33% - 10px); /* Define a largura de cada container, subtraindo o espaço entre eles */
+            margin-right: 10px; /* Espaço entre cada container de distintivo */
+            margin-bottom: 10px; /* Espaço abaixo de cada container de distintivo */
         }
         
         .badge-item {
@@ -103,7 +103,7 @@
         /* Estilos responsivos */
         @media (max-width: 768px) {
             .badge-container {
-                width: calc(50% - 20px); /* Altera a largura dos containers em telas menores */
+                width: calc(50% - 10px); /* Altera a largura dos containers em telas menores */
             }
         }
         
@@ -113,6 +113,7 @@
                 float: none; /* Remove a flutuação para empilhar os containers */
                 margin-right: 0; /* Remove o espaço entre containers */
             }
+        }
 
         .social-icons a:hover {
             color: #007bff;
