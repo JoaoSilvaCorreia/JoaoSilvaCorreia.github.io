@@ -105,7 +105,7 @@
        
        @media (max-width: 480px) {
            .badge-container {
-               width: 100%; /* Altera para largura total em dispositivos móveis */
+               width: 25%; /* Altera para largura total em dispositivos móveis */
                float: none; /* Remove a flutuação para empilhar os containers */
                margin-right: 0; /* Remove o espaço entre containers */
            }
