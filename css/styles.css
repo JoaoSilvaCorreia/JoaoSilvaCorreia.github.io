@@ -72,16 +72,16 @@
             color: #333;
         }
         .contact-info i {
-            margin-right: 10px;
+            margin-right: 1px;
         }
         .contact-info p {
             display: inline-block;
-            margin-bottom: 10px;
+            margin-bottom: 1px;
         }
         .social-icons a {
             color: #555;
             font-size: 24px;
-            margin-right: 10px;
+            margin-right: 1px;
         }
         .social-icons a:hover {
             color: #007bff;
