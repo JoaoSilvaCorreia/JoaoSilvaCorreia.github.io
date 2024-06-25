@@ -84,36 +84,35 @@
             margin-right: 1px;
         }
 
-
-
-
-
-     
-        .badge-container {
-            float: left; /* Faz com que os containers de distintivos flutuem lado a lado */
-            width: calc(33.33% - 10px); /* Define a largura de cada container, subtraindo o espaço entre eles */
-            margin-right: 10px; /* Espaço entre cada container de distintivo */
-            margin-bottom: 10px; /* Espaço abaixo de cada container de distintivo */
-        }
-        
-        .badge-item {
-            margin-bottom: 10px; /* Espaço entre distintivos dentro do mesmo container */
-        }
-        
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
+       
             .badge-container {
-                width: calc(50% - 10px); /* Altera a largura dos containers em telas menores */
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .badge-container {
-                width: 100%; /* Altera para largura total em dispositivos móveis */
-                float: none; /* Remove a flutuação para empilhar os containers */
-                margin-right: 0; /* Remove o espaço entre containers */
-            }
-        }
+           display: flex; /* Utiliza flexbox para alinhar os containers de distintivos */
+           flex-wrap: wrap; /* Permite que os containers quebrem para a próxima linha conforme necessário */
+           justify-content: space-between; /* Distribui os containers uniformemente ao longo do espaço disponível */
+           margin-bottom: 10px; /* Espaço abaixo dos containers */
+       }
+       
+       .badge-item {
+           width: calc(50% - 10px); /* Define a largura de cada item (dois por linha) */
+           margin-bottom: 10px; /* Espaço abaixo de cada distintivo */
+           box-sizing: border-box; /* Garante que a largura inclua o padding e a borda */
+           padding: 10px; /* Espaçamento interno dos distintivos */
+       }
+       
+       /* Estilos responsivos */
+       @media (max-width: 768px) {
+           .badge-item {
+               width: calc(50% - 10px); /* Altera para dois itens por linha em telas menores */
+           }
+       }
+       
+       @media (max-width: 480px) {
+           .badge-item {
+               width: 100%; /* Define a largura total para um item por linha em dispositivos móveis */
+           }
+       }
+       
+       
 
         .social-icons a:hover {
             color: #007bff;
