@@ -88,8 +88,8 @@
            .badge-container {
            float: left; /* Faz com que os containers de distintivos flutuem lado a lado */
            width: calc(33.33% - 20px); /* Define a largura de cada container, subtraindo o espaço entre eles */
-           margin-right: 20px; /* Espaço entre cada container de distintivo */
-           margin-bottom: 20px; /* Espaço abaixo de cada container de distintivo */
+           margin-right: 10px; /* Espaço entre cada container de distintivo */
+           margin-bottom: 10px; /* Espaço abaixo de cada container de distintivo */
        }
        
        .badge-item {
