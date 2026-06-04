@@ -114,7 +114,22 @@
      
 
 
-
+  .experience-item {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 25px;
+  }
+  
+  .experience-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 4px;
+      height: calc(100% - 10px);
+      background-color: #003366;
+      border-radius: 2px;
+  }
 
 
 
