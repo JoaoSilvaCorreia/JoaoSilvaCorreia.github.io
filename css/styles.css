@@ -127,7 +127,7 @@
       top: 5px;
       width: 4px;
       height: calc(100% - 10px);
-      background-color: black;
+      background-color: #000;
       border-radius: 2px;
   }
 
